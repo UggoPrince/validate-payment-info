@@ -1,0 +1,43 @@
+{
+  "name": "validate-payment-info",
+  "version": "1.0.0",
+  "description": "API to validate credit card payment information",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "clean": "./node_modules/bin/rimraf dist",
+    "build": "babel ./src --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UggoPrince/validate-payment-info.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UggoPrince/validate-payment-info/issues"
+  },
+  "homepage": "https://github.com/UggoPrince/validate-payment-info#readme",
+  "dependencies": {
+    "core-js": "^3.15.2",
+    "express": "^4.17.1",
+    "regenerator-runtime": "^0.13.7",
+    "rimraf": "^3.0.2",
+    "validate.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.8"
+  }
+}
